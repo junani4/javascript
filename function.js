@@ -124,3 +124,22 @@ const simpleMultiply = (a, b) => {
 (function hello() {
     console.log('IIFE');
 })();
+
+// quiz time
+function calcualte(command, a, b){
+    switch(command) {
+        case 'add':
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+        default:
+            throw Error('error');
+    }
+}
+console.log(calcualte('add', 2, 3));
